@@ -26,22 +26,42 @@ public class Room {
 		this.wall = color;
 	}
 	
+	/**
+	 * Initialize the room with number of windows
+	 * @param noOfWindows the number of windows (data type is integer)
+	 */
 	public Room(int noOfWindows) {
 		this.windows = noOfWindows;
 	}
 	
+	/**
+	 * Get the floor type
+	 * @return the floor type
+	 */
 	public String getFloor() {
 		return floor;
 	}
 
+	/**
+	 * Set the floor type
+	 * @param floor floor type
+	 */
 	public void setFloor(String floor) {
 		this.floor = floor;
 	}
 
+	/**
+	 * get the number of windows
+	 * @return number of windows
+	 */
 	public int getWindows() {
 		return windows;
 	}
 
+	/**
+	 * 
+	 * @param windows
+	 */
 	public void setWindows(int windows) {
 		this.windows = windows;
 	}
@@ -62,12 +82,15 @@ public class Room {
 		return this.wall;
 	}
 
+	/**
+	 * 
+	 */
 	@Override
 	public String toString() {
 		return "Room [wall=" + wall + ", getWall()=" + getWall()
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
-				+ ", toString()=" + super.toString() + "]";
+				 +"]";
 	}
+	
 	
 	
 }
